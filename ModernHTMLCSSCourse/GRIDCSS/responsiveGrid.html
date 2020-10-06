@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1rem;
+      }
+      .item {
+        border: 1px solid black;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(2, auto);
+        }
+      }
+      @media (max-width: 500px) {
+        .grid {
+          grid-template-columns: repeat(1, auto);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem a
+          deleniti voluptates? Voluptatem nostrum libero fugit numquam harum eum
+          enim quis! Optio, facilis. Molestias harum non facilis, fugiat
+          corporis molestiae beatae expedita perferendis ea id assumenda porro,
+          temporibus vel voluptatem vero accusantium tenetur eveniet nobis! Illo
+          beatae molestias eligendi nostrum?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem a
+          deleniti voluptates? Voluptatem nostrum libero fugit numquam harum eum
+          enim quis! Optio, facilis. Molestias harum non facilis, fugiat
+          corporis molestiae beatae expedita perferendis ea id assumenda porro,
+          temporibus vel voluptatem vero accusantium tenetur eveniet nobis! Illo
+          beatae molestias eligendi nostrum?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem a
+          deleniti voluptates? Voluptatem nostrum libero fugit numquam harum eum
+          enim quis! Optio, facilis. Molestias harum non facilis, fugiat
+          corporis molestiae beatae expedita perferendis ea id assumenda porro,
+          temporibus vel voluptatem vero accusantium tenetur eveniet nobis! Illo
+          beatae molestias eligendi nostrum?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem a
+          deleniti voluptates? Voluptatem nostrum libero fugit numquam harum eum
+          enim quis! Optio, facilis. Molestias harum non facilis, fugiat
+          corporis molestiae beatae expedita perferendis ea id assumenda porro,
+          temporibus vel voluptatem vero accusantium tenetur eveniet nobis! Illo
+          beatae molestias eligendi nostrum?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

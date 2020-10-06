@@ -1,0 +1,27 @@
+/* Direct Child */
+div > p {
+  /* Tylko jeśli jest bezpośrednim dzieckiem ">" */
+  background: gray;
+}
+
+/* Directly after */
+
+div + p {
+  /* Odrazu po divie "p" */
+  background: green;
+}
+
+/* By atribute */
+
+/* a[target="_blank"] { */
+a[target="_blank"] {
+  /* a z polem target */
+  background: red;
+}
+
+/* Specific atribut values */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 5px;
+}

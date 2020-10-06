@@ -1,0 +1,102 @@
+// HOME SECTIONS
+
+%grid-home-sections {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#home {
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      @extend %grid-home-sections;
+    }
+
+    .fas {
+      color: $main-color;
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        &:nth-child(odd) {
+          padding: 3rem 0;
+          background: $light-color;
+        }
+
+        &:nth-child(even) {
+          padding: 3rem 0;
+          background: $medium-color;
+        }
+      }
+    }
+
+    li {
+      line-height: 2;
+
+      &.stats-title {
+        font-size: 1.5rem;
+      }
+
+      &.stats-number {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        color: set-text-color($main-color);
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+
+      &-icon {
+        border-radius: 50%;
+        background: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
+      }
+    }
+  }
+}

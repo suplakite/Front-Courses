@@ -1,0 +1,64 @@
+#header-home {
+  //Header Home
+  background: $bg-img no-repeat center right/cover;
+  height: 100vh;
+  color: white;
+}
+
+#header-inner {
+  background: $bg-img no-repeat 20% 30% / cover;
+  height: 5.5rem;
+  border-bottom: 3px solid $main-color;
+}
+
+// Header Content
+.header-content {
+  text-align: center;
+  padding-top: 20%;
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  color: white;
+  text-transform: uppercase;
+}
+
+// NAVBAR
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
